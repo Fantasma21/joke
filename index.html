@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jokenpo</title>
+</head>
+
+<body>
+    <h1>Jokenpô</h1>
+    <h2>Você</h2>
+    <img src="img/pedra.png" alt="pedra">
+    <img src="img/papel.png" alt="papel">
+    <img src="img/tesoura.png" alt="tesoura">
+    <form name="frmJokenpo">
+        <input type="radio" name="grupo" id="pedra">Pedra
+        <!-- name="grupo" faz com q seja selecionada apenas 1 opção -->
+        <input type="radio" name="grupo" id="papel">Papel
+        <input type="radio" name="grupo" id="tesoura">Tesoura
+        <p>
+            <input type="button" value=" JOGAR " onclick="jogar()">
+            <input type="reset" value="RESET" onclick="resetar()">
+        </p>
+    </form>
+
+    <hr>
+    <h2>Computador</h2>
+    <img src="img/pc.png" alt="pc" id="pc">
+    <hr id="pr">
+    <h1 id="placar"></h1>
+
+    <script src="jokenpo.js"></script>
+</body>
+
+</html>
